@@ -80,4 +80,7 @@
     section .presentation {
         display:none;
     }
+    /*section .contacto, ul, li {
+        display:none;
+    }*/
 }
