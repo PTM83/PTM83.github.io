@@ -25,6 +25,10 @@
     text-justify:inter-word;
 }
 
+section ul {
+    margin:0px;
+}
+
 .experiencia, ul, il, span {
     margin:0.5em;
     text-align:justify;
