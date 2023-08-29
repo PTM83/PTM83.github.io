@@ -66,9 +66,10 @@ section ul {
       transform-style: preserve-3d;
       transition: transform 0.5s;
     }
-    /* Efecto de volteo */
+
+    /* Desactivar el volteo en pantallas grandes */
     .flip-card:hover .flip-card-inner {
-      transform: rotateY(180deg);
+      transform: rotateY(0deg);
     }
     /* Estilos para el frente y la parte de atrás de la tarjeta */
     .flip-card-front, .flip-card-back {
@@ -94,6 +95,11 @@ section ul {
       padding: 20px;
       box-sizing: border-box;
     }
+
+.flipped {
+  transform: rotateY(180deg);
+}
+
 
 /* Estilo para pantallas con un ancho máximo de 768px (tamaño típico de un dispositivo móvil en modo retrato) */
 @media screen and (max-width: 1023px) {
@@ -136,3 +142,36 @@ section ul {
         display:none;
     }*/
 }
+
+@media screen and (min-width: 760px) and (max-width: 1024px) {
+    .flip-card {
+      width: 215px;
+      height: 215px;
+      perspective: 1000px;
+    }
+    .flip-card-front {
+      background-image: url('https://via.placeholder.com/215');
+      background-size: cover;
+    }
+
+    .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+    }
+}
+
+@media screen and (max-width: 759px) {
+    .flip-card {
+      width: 350px;
+      height: 350px;
+      perspective: 1000px;
+    }
+    .flip-card-front {
+      background-image: url('https://via.placeholder.com/200');
+      background-size: cover;
+    }
+
+    .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+    }
+}
+
