@@ -47,6 +47,11 @@ section ul {
     text-justify:inter-word;
 }
 
+.card img {
+    height:380px;
+    width:100%;
+}
+
 /* Estilo para pantallas con un ancho máximo de 768px (tamaño típico de un dispositivo móvil en modo retrato) */
 @media screen and (max-width: 1023px) {
     .principal-section {
