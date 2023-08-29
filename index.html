@@ -693,6 +693,7 @@
 <!-- JavaScript con jQuery-->
 <script>
     $(document).ready(function(){
+
       $(".flip-card").on("touchstart", function(){
         $(this).find('.flip-card-inner').addClass("flipped");
       });
@@ -700,6 +701,16 @@
       $(".flip-card").on("touchend", function(){
         $(this).find('.flip-card-inner').removeClass("flipped");
       });
+
+
+      $(".flip-card").on("mouseenter", function(){
+        $(this).find('.flip-card-inner').addClass("flipped");
+      });
+
+      $(".flip-card").on("mouseleave", function(){
+        $(this).find('.flip-card-inner').removeClass("flipped");
+      });
+
     });
 </script>
 

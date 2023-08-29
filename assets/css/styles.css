@@ -69,7 +69,7 @@ section ul {
 
     /* Desactivar el volteo en pantallas grandes */
     .flip-card:hover .flip-card-inner {
-      transform: rotateY(0deg);
+      transform: rotateY(180deg);
     }
     /* Estilos para el frente y la parte de atrás de la tarjeta */
     .flip-card-front, .flip-card-back {
