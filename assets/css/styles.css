@@ -145,12 +145,12 @@ section ul {
 
 @media screen and (min-width: 760px) and (max-width: 1024px) {
     .flip-card {
-      width: 215px;
-      height: 215px;
+      width: 270px;
+      height: 270px;
       perspective: 1000px;
     }
     .flip-card-front {
-      background-image: url('https://via.placeholder.com/215');
+      background-image: url('https://via.placeholder.com/270');
       background-size: cover;
     }
 
@@ -161,12 +161,12 @@ section ul {
 
 @media screen and (max-width: 759px) {
     .flip-card {
-      width: 350px;
+      width: 100%;
       height: 350px;
       perspective: 1000px;
     }
     .flip-card-front {
-      background-image: url('https://via.placeholder.com/200');
+      background-image: url('https://via.placeholder.com/350');
       background-size: cover;
     }
 
